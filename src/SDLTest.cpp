@@ -1,14 +1,14 @@
 ﻿#include <SDL3/SDL.h>
 #include <SDL3_image/SDL_image.h>
 #include <iostream>
-
+#include "SDLTest.h"
 int main(int argc, char* argv[]) {
     if (!SDL_Init(SDL_INIT_VIDEO)) {
         std::cerr << "SDL_Init failed: " << SDL_GetError() << std::endl;
         return 1;
     }
 
-    SDL_Window* window = SDL_CreateWindow("SDL3 Image Test", 800, 600, 0);
+    SDL_Window* window = SDL_CreateWindow("SDL3 Image Test", 1920, 1080, 0);
     if (!window) {
         std::cerr << "SDL_CreateWindow failed: " << SDL_GetError() << std::endl;
         SDL_Quit();
