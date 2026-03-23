@@ -22,8 +22,15 @@ set(SDLIMAGE_TESTS OFF CACHE BOOL "" FORCE)
 add_subdirectory(external/SDL_image)
 
 add_executable(SDLTest
-   SDLTest.cpp
-   SDLTest.h
+    main.cpp
+    Engine.cpp
+    WindowManager.cpp
+    Renderer2D.cpp
+    TextureManager.cpp
+    InputManager.cpp
+    GameLoop.cpp
+    ResourceManager.cpp
+    Sprite.cpp
 )
 
 target_link_libraries(SDLTest PRIVATE
