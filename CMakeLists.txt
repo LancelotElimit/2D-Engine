@@ -25,7 +25,15 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 
 # 可执行程序
 add_executable(SDLTest
-    src/SDLTest.cpp
+    main.cpp
+    Engine.cpp
+    WindowManager.cpp
+    Renderer2D.cpp
+    TextureManager.cpp
+    InputManager.cpp
+    GameLoop.cpp
+    ResourceManager.cpp
+    Sprite.cpp
 )
 
 # 链接库
